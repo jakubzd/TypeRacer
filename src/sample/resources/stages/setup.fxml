@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.SetupController">
+   <children>
+      <ComboBox layoutX="80.0" layoutY="105.0" prefWidth="150.0" promptText="Choose language" />
+      <ImageView fx:id="imageView" fitHeight="196.0" fitWidth="283.0" layoutX="270.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

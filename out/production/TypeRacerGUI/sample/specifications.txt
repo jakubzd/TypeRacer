@@ -1,0 +1,10 @@
+1. logging in or play as a guest
+see how to do registration and login
+without db or with it if needed
+2. choose difficulty and language (pl / english):
+easy
+intermediate
+hard
+custom text (chose a file)
+3. options (add a txt file to resources)
+

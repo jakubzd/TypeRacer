@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.MainController">
+   <items>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane prefHeight="367.0" prefWidth="608.0">
+        <items>
+          <AnchorPane>
+               <children>
+                  <Label fx:id="mainLabel" alignment="CENTER" layoutX="110.0" layoutY="14.0" text="Welcome to Typeracer!" textFill="#dd3535" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold Condensed" size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </Label>
+                  <VBox layoutX="202.0" layoutY="103.0" prefHeight="219.0" prefWidth="204.0">
+                     <children>
+                        <Label text="Username" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="usernameField" alignment="BOTTOM_LEFT">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </TextField>
+                        <Label text="Password">
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <PasswordField fx:id="passwordField">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </PasswordField>
+                        <HBox alignment="CENTER" prefHeight="27.0" prefWidth="204.0">
+                           <children>
+                              <Button mnemonicParsing="false" text="Log in" textOverrun="CENTER_WORD_ELLIPSIS">
+                                 <padding>
+                                    <Insets bottom="5.0" left="8.0" right="8.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets right="15.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Play as a guest" textOverrun="CENTER_WORD_ELLIPSIS">
+                                 <padding>
+                                    <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Button fx:id="buttonPlay" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="48.0" prefWidth="182.0" text="PLAY" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+                           <padding>
+                              <Insets bottom="5.0" left="8.0" right="8.0" top="5.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="10.0" top="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Gill Sans Ultra Bold" size="27.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </items>
+   <cursor>
+      <Cursor fx:constant="CROSSHAIR" />
+   </cursor>
+</SplitPane>
